@@ -1,0 +1,16 @@
+# Prevent Git from attempting to merge binary images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.tiff binary
+*.webp binary
+*.psd binary
+*.svg merge=union
+
+# Optional: Track large image files with Git LFS (if used)
+# Uncomment if using Git LFS
+# *.png filter=lfs diff=lfs merge=lfs -text
+# *.jpg filter=lfs diff=lfs merge=lfs -text
+# *.psd filter=lfs diff=lfs merge=lfs -text
